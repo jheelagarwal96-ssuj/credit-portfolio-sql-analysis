@@ -7,7 +7,7 @@ Which loan products, cities and credit-score groups carry the most default risk 
 A **synthetic** dataset I generated for practice (not real customer data):
 - 1,200 customers, 1,800 loans, 27,190 monthly repayments
 - As-of date: 30 Sep 2026
-- Files are in the `data` folder (CSV files and a SQLite database)
+- Files are in this repository (CSV files and a SQLite database)
 
 ## Method and tools
 - SQLite (queried through DB Browser for SQLite)
@@ -19,5 +19,7 @@ A **synthetic** dataset I generated for practice (not real customer data):
 2. Credit scores below 600 default at 14.9%, about double the other bands (7-9%).
 3. 6.0% of the live loan book is 90+ days past due.
 
+Note: all figures come from synthetic data, so they illustrate the method and are not real-world benchmarks.
+
 ## How to run
-Open `data/credit_portfolio.db` in DB Browser for SQLite and run the queries in `2_SQL_Credit_Portfolio_Queries.sql`.
+Open `credit_portfolio.db` in DB Browser for SQLite and run the queries in `2_SQL_Credit_Portfolio_Queries.sql`.
